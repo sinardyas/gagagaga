@@ -145,7 +145,7 @@ const generatePopulation = async () => {
   const population = await generatePopulation();
 
   population.forEach((data, idx) => {
-    console.info(`Population ${idx + 1}\n`);
+    console.info(`Population: ${idx + 1}\n`);
     for (let i = 0; i < data.length; i += 1) {
       console.info(`Date: ${data[i].date}\n`);
       for (let j = 0; j < data[i].member.length; j += 1) {
