@@ -106,17 +106,6 @@ const generatePopulation = async () => {
         }
         let keyboardist = keyboardistTeam[getRandomNumber((keyboardistTeam.length - 1), 0)];
 
-        // propheticMemberList.multimedia = multimedia;
-        // propheticMemberList.camera = camera;
-        // propheticMemberList.worshipLeader = worshipLeader;
-        // propheticMemberList.singerOne = singerOne;
-        // propheticMemberList.singerTwo = singerTwo;
-        // if (worshipHour > 1) {
-        //   propheticMemberList.drummer = drummer;
-        //   propheticMemberList.bassist = bassist;
-        // }
-        // propheticMemberList.keyboardist = keyboardist;
-
         daySchedule.push(multimedia);
         daySchedule.push(camera);
         daySchedule.push(worshipLeader);
