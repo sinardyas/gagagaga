@@ -98,12 +98,8 @@ const generatePopulation = async () => {
         let worshipLeader = worshipLeaderTeam[getRandomNumber((worshipLeaderTeam.length - 1), 0)];
         let singerOne = singerTeam[getRandomNumber((singerTeam.length - 1), 0)];
         let singerTwo = singerTeam[getRandomNumber((singerTeam.length - 1), 0)];
-        let drummer;
-        let bassist;
-        if (worshipHour > 1) {
-          drummer = drummerTeam[getRandomNumber((drummerTeam.length - 1), 0)];
-          bassist = bassistTeam[getRandomNumber((bassistTeam.length - 1), 0)];
-        }
+        let drummer = worshipHour > 1 ? drummerTeam[getRandomNumber((drummerTeam.length - 1), 0)] : [];
+        let bassist = worshipHour > 1 ? bassistTeam[getRandomNumber((bassistTeam.length - 1), 0)] : [];
         let keyboardist = keyboardistTeam[getRandomNumber((keyboardistTeam.length - 1), 0)];
 
         daySchedule.push(multimedia);
@@ -111,11 +107,10 @@ const generatePopulation = async () => {
         daySchedule.push(worshipLeader);
         daySchedule.push(singerOne);
         daySchedule.push(singerTwo);
-        if (worshipHour > 1) {
-          daySchedule.push(drummer);
-          daySchedule.push(bassist);
-        }
+        daySchedule.push(drummer);
+        daySchedule.push(bassist);
         daySchedule.push(keyboardist);
+
         weekSchedule.push(daySchedule);
         propheticMemberList = {};
         daySchedule = [];
@@ -132,16 +127,63 @@ const generatePopulation = async () => {
 
 (async function() {
   const population = await generatePopulation();
+  const moreThanOnePositionPenalty = 1;
+  let penaltyTotal = 0;
+  let totalPosition = 0;
 
   population.forEach((data, idx) => {
     console.info(`Population: ${idx + 1}\n`);
+    /**
+     * month level
+     */
     for (let i = 0; i < data.length; i += 1) {
       console.info(`Date: ${data[i].date}\n`);
+      /**
+       * week level
+       */
       for (let j = 0; j < data[i].member.length; j += 1) {
         console.info(`KC: ${j + 1}`);
-        for (let k = 0; k < data[i].member[j].length; k += 1) {
-          console.info(`  ${data[i].member[j][k]['detail.position']}: ${data[i].member[j][k].first_name}`);
+        /**
+         * day level
+         */
+        let multimediaPosition = data[i].member[j][0].first_name;
+        let documentationPosition = data[i].member[j][1].first_name;
+        let worshipLeaderPosition = data[i].member[j][2].first_name;
+        let singerIPosition = data[i].member[j][3].first_name;
+        let singerIIPosition = data[i].member[j][4].first_name;
+        let drummerPosition = data[i].member[j][5].first_name;
+        let bassistPosition = data[i].member[j][6].first_name;
+        let keyboardistPosition = data[i].member[j][7].first_name;
+
+        console.info(multimediaPosition);
+        console.info(documentationPosition);
+        console.info(worshipLeaderPosition);
+        console.info(singerIPosition);
+        console.info(singerIIPosition);
+        console.info(drummerPosition);
+        console.info(bassistPosition);
+        console.info(keyboardistPosition);
+
+        totalPosition = data[i].member[j].filter(temp => (temp.first_name == multimediaPosition)).length;
+        if (totalPosition > 1) penaltyTotal += moreThanOnePositionPenalty;
+        totalPosition = data[i].member[j].filter(temp => (temp.first_name == documentationPosition)).length;
+        if (totalPosition > 1) penaltyTotal += moreThanOnePositionPenalty;
+        totalPosition = data[i].member[j].filter(temp => (temp.first_name == worshipLeaderPosition)).length;
+        if (totalPosition > 1) penaltyTotal += moreThanOnePositionPenalty;
+        totalPosition = data[i].member[j].filter(temp => (temp.first_name == singerIPosition)).length;
+        if (totalPosition > 1) penaltyTotal += moreThanOnePositionPenalty;
+        totalPosition = data[i].member[j].filter(temp => (temp.first_name == singerIIPosition)).length;
+        if (totalPosition > 1) penaltyTotal += moreThanOnePositionPenalty;
+        if (drummerPosition && bassistPosition) {
+          totalPosition = data[i].member[j].filter(temp => (temp && (temp.first_name == drummerPosition))).length;
+          if (totalPosition > 1) penaltyTotal += moreThanOnePositionPenalty;
+          totalPosition = data[i].member[j].filter(temp => (temp && (temp.first_name == bassistPosition))).length;
+          if (totalPosition > 1) penaltyTotal += moreThanOnePositionPenalty;
         }
+        totalPosition = data[i].member[j].filter(temp => (temp.first_name == keyboardistPosition)).length;
+        if (totalPosition > 1) penaltyTotal += moreThanOnePositionPenalty;
+
+        console.info(`  penaltyTotal : ${penaltyTotal}`);
       }
       console.info('\n~~~~~~~~~~~~~~~~~~~~~\n');
     }

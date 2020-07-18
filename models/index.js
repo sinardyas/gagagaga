@@ -1,10 +1,9 @@
-const PropheticMember = require('./Prophetic-member');
-const PropheticMemberPosition = require('./Prophetic-member-position');
+const PropheticMember = require('./prophetic-member');
+const PropheticMemberPosition = require('./prophetic-member-position');
 
 PropheticMember.hasMany(PropheticMemberPosition, { as: 'detail' });
 
 module.exports = {
   PropheticMember,
   PropheticMemberPosition
-}
-
+};
