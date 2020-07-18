@@ -1,5 +1,8 @@
 const { POSITION } = require('../config/constant');
-const { WORSHIPLEADER, SINGER, KEYBOARD, BASS, DRUM, MULTIMEDIA, CAMERA } = POSITION;
+
+const {
+  WORSHIPLEADER, SINGER, KEYBOARD, BASS, DRUM, MULTIMEDIA, CAMERA
+} = POSITION;
 
 module.exports = {
   up: (queryInterface, Sequelize) => queryInterface.createTable('PropheticMemberSchedule', {
@@ -18,10 +21,18 @@ module.exports = {
       }
     },
     assigned_date: Sequelize.DATE,
-    assigned_position: Sequelize.ENUM(WORSHIPLEADER, SINGER, KEYBOARD, BASS, DRUM, MULTIMEDIA, CAMERA),
+    assigned_position: Sequelize.ENUM(
+      WORSHIPLEADER,
+      SINGER,
+      KEYBOARD,
+      BASS,
+      DRUM,
+      MULTIMEDIA,
+      CAMERA
+    ),
     created_at: Sequelize.DATE,
-    updated_at: Sequelize.DATE,
+    updated_at: Sequelize.DATE
   }),
 
-  down: queryInterface => queryInterface.dropTable('PropheticMemberSchedule'),
+  down: (queryInterface) => queryInterface.dropTable('PropheticMemberSchedule')
 };

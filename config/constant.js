@@ -11,19 +11,25 @@ const POSITION = {
 const GENDER = {
   PRIA: 'PRIA',
   WANITA: 'WANITA'
-}
+};
 
 const STATUS = {
   ACTIVE: 'ACTIVE',
   INACTIVE: 'INACTIVE',
   OFF: 'OFF'
-}
+};
 
-const POPULATION_NUMBER = 10;
+const ROLE = {
+  ADMIN: 'ADMIN',
+  USER: 'USER'
+};
+
+const POPULATION_NUMBER = 1;
 
 module.exports = {
   POSITION,
   GENDER,
   STATUS,
+  ROLE,
   POPULATION_NUMBER
-}
+};

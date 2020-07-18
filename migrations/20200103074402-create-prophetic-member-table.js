@@ -1,6 +1,7 @@
-const { GENDER, STATUS } = require('../config/constant');
+const { GENDER, STATUS, ROLE } = require('../config/constant');
 const { PRIA, WANITA } = GENDER;
 const { ACTIVE, INACTIVE, OFF } = STATUS;
+const { ADMIN, USER } = ROLE;
 
 module.exports = {
   up: (queryInterface, Sequelize) => queryInterface.createTable('PropheticMember', {
@@ -14,6 +15,9 @@ module.exports = {
     last_name: Sequelize.STRING,
     gender: Sequelize.ENUM(PRIA, WANITA),
     phone_number: Sequelize.STRING,
+    password: Sequelize.STRING,
+    email: Sequelize.STRING,
+    role: Sequelize.ENUM(ADMIN, USER),
     status: Sequelize.ENUM(ACTIVE, INACTIVE, OFF),
     created_at: Sequelize.DATE,
     updated_at: Sequelize.DATE,

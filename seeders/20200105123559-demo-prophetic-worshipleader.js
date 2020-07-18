@@ -1,6 +1,6 @@
 
 module.exports = {
-  up: (queryInterface, Sequelize) => queryInterface.bulkInsert('PropheticMemberPosition', [{
+  up: (queryInterface) => queryInterface.bulkInsert('PropheticMemberPosition', [{
     prophetic_member_id: 13,
     position: 'WORSHIPLEADER',
     created_at: new Date(),
@@ -36,5 +36,5 @@ module.exports = {
     created_at: new Date(),
     updated_at: new Date()
   }], {}),
-  down: (queryInterface, Sequelize) => queryInterface.bulkDelete('PropheticMemberPosition', null, {})
+  down: (queryInterface) => queryInterface.bulkDelete('PropheticMemberPosition', null, {})
 };

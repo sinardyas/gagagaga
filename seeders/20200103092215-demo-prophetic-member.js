@@ -1,11 +1,17 @@
-
+/**
+ * $2y$10$L39zwF0Cd.4HqpGJClYsoeB.sE8xncMbxDOPMM8Y1hl/K4qIWnBDq
+ * profetikcitraraya
+ */
 module.exports = {
-  up: (queryInterface, Sequelize) => queryInterface.bulkInsert('PropheticMember', [{
+  up: (queryInterface) => queryInterface.bulkInsert('PropheticMember', [{
     first_name: 'Sinar',
     last_name: 'Dyas',
     phone_number: '6282227777619',
     gender: 'PRIA',
     status: 'ACTIVE',
+    role: 'ADMIN',
+    email: 'sinar@mail.me',
+    password: '$2y$10$L39zwF0Cd.4HqpGJClYsoeB.sE8xncMbxDOPMM8Y1hl/K4qIWnBDq',
     created_at: new Date(),
     updated_at: new Date()
   }, {
@@ -14,6 +20,9 @@ module.exports = {
     phone_number: '6282227777620',
     gender: 'WANITA',
     status: 'ACTIVE',
+    role: 'USER',
+    email: 'destine@mail.me',
+    password: '$2y$10$L39zwF0Cd.4HqpGJClYsoeB.sE8xncMbxDOPMM8Y1hl/K4qIWnBDq',
     created_at: new Date(),
     updated_at: new Date()
   }, {
@@ -22,6 +31,9 @@ module.exports = {
     phone_number: '6282227777621',
     gender: 'WANITA',
     status: 'ACTIVE',
+    role: 'USER',
+    email: 'desi@mail.me',
+    password: '$2y$10$L39zwF0Cd.4HqpGJClYsoeB.sE8xncMbxDOPMM8Y1hl/K4qIWnBDq',
     created_at: new Date(),
     updated_at: new Date()
   }, {
@@ -30,6 +42,9 @@ module.exports = {
     phone_number: '6282227777622',
     gender: 'WANITA',
     status: 'ACTIVE',
+    role: 'USER',
+    email: 'hennye@mail.me',
+    password: '$2y$10$L39zwF0Cd.4HqpGJClYsoeB.sE8xncMbxDOPMM8Y1hl/K4qIWnBDq',
     created_at: new Date(),
     updated_at: new Date()
   }, {
@@ -38,6 +53,9 @@ module.exports = {
     phone_number: '6282227777622',
     gender: 'WANITA',
     status: 'ACTIVE',
+    role: 'USER',
+    email: 'kristin@mail.me',
+    password: '$2y$10$L39zwF0Cd.4HqpGJClYsoeB.sE8xncMbxDOPMM8Y1hl/K4qIWnBDq',
     created_at: new Date(),
     updated_at: new Date()
   }, {
@@ -46,6 +64,9 @@ module.exports = {
     phone_number: '6282227777622',
     gender: 'WANITA',
     status: 'ACTIVE',
+    role: 'USER',
+    email: 'cindy@mail.me',
+    password: '$2y$10$L39zwF0Cd.4HqpGJClYsoeB.sE8xncMbxDOPMM8Y1hl/K4qIWnBDq',
     created_at: new Date(),
     updated_at: new Date()
   }, {
@@ -54,6 +75,9 @@ module.exports = {
     phone_number: '6282227777622',
     gender: 'WANITA',
     status: 'ACTIVE',
+    role: 'USER',
+    email: 'priscilla@mail.me',
+    password: '$2y$10$L39zwF0Cd.4HqpGJClYsoeB.sE8xncMbxDOPMM8Y1hl/K4qIWnBDq',
     created_at: new Date(),
     updated_at: new Date()
   }, {
@@ -62,6 +86,9 @@ module.exports = {
     phone_number: '6282227777622',
     gender: 'WANITA',
     status: 'ACTIVE',
+    role: 'USER',
+    email: 'elia@mail.me',
+    password: '$2y$10$L39zwF0Cd.4HqpGJClYsoeB.sE8xncMbxDOPMM8Y1hl/K4qIWnBDq',
     created_at: new Date(),
     updated_at: new Date()
   }, {
@@ -70,6 +97,9 @@ module.exports = {
     phone_number: '6282227777622',
     gender: 'WANITA',
     status: 'ACTIVE',
+    role: 'USER',
+    email: 'fanny@mail.me',
+    password: '$2y$10$L39zwF0Cd.4HqpGJClYsoeB.sE8xncMbxDOPMM8Y1hl/K4qIWnBDq',
     created_at: new Date(),
     updated_at: new Date()
   }, {
@@ -78,6 +108,9 @@ module.exports = {
     phone_number: '6282227777622',
     gender: 'WANITA',
     status: 'ACTIVE',
+    role: 'USER',
+    email: 'elizabeth@mail.me',
+    password: '$2y$10$L39zwF0Cd.4HqpGJClYsoeB.sE8xncMbxDOPMM8Y1hl/K4qIWnBDq',
     created_at: new Date(),
     updated_at: new Date()
   }, { // 10
@@ -86,6 +119,9 @@ module.exports = {
     phone_number: '6282227777622',
     gender: 'WANITA',
     status: 'ACTIVE',
+    role: 'USER',
+    email: 'yoevance@mail.me',
+    password: '$2y$10$L39zwF0Cd.4HqpGJClYsoeB.sE8xncMbxDOPMM8Y1hl/K4qIWnBDq',
     created_at: new Date(),
     updated_at: new Date()
   }, {
@@ -94,6 +130,9 @@ module.exports = {
     phone_number: '6282227777622',
     gender: 'PRIA',
     status: 'ACTIVE',
+    role: 'USER',
+    email: 'jotam@mail.me',
+    password: '$2y$10$L39zwF0Cd.4HqpGJClYsoeB.sE8xncMbxDOPMM8Y1hl/K4qIWnBDq',
     created_at: new Date(),
     updated_at: new Date()
   }, {
@@ -102,6 +141,9 @@ module.exports = {
     phone_number: '6282227777622',
     gender: 'WANITA',
     status: 'ACTIVE',
+    role: 'USER',
+    email: 'viona@mail.me',
+    password: '$2y$10$L39zwF0Cd.4HqpGJClYsoeB.sE8xncMbxDOPMM8Y1hl/K4qIWnBDq',
     created_at: new Date(),
     updated_at: new Date()
   }, {
@@ -110,6 +152,9 @@ module.exports = {
     phone_number: '6282227777622',
     gender: 'WANITA',
     status: 'ACTIVE',
+    role: 'USER',
+    email: 'tetty@mail.me',
+    password: '$2y$10$L39zwF0Cd.4HqpGJClYsoeB.sE8xncMbxDOPMM8Y1hl/K4qIWnBDq',
     created_at: new Date(),
     updated_at: new Date()
   }, {
@@ -118,6 +163,9 @@ module.exports = {
     phone_number: '6282227777622',
     gender: 'PRIA',
     status: 'ACTIVE',
+    role: 'USER',
+    email: 'efraim@mail.me',
+    password: '$2y$10$L39zwF0Cd.4HqpGJClYsoeB.sE8xncMbxDOPMM8Y1hl/K4qIWnBDq',
     created_at: new Date(),
     updated_at: new Date()
   }, {
@@ -126,6 +174,9 @@ module.exports = {
     phone_number: '6282227777622',
     gender: 'WANITA',
     status: 'ACTIVE',
+    role: 'USER',
+    email: 'vetty@mail.me',
+    password: '$2y$10$L39zwF0Cd.4HqpGJClYsoeB.sE8xncMbxDOPMM8Y1hl/K4qIWnBDq',
     created_at: new Date(),
     updated_at: new Date()
   }, {
@@ -134,11 +185,17 @@ module.exports = {
     phone_number: '6282227777622',
     gender: 'WANITA',
     status: 'ACTIVE',
+    role: 'USER',
+    email: 'maya@mail.me',
+    password: '$2y$10$L39zwF0Cd.4HqpGJClYsoeB.sE8xncMbxDOPMM8Y1hl/K4qIWnBDq',
     created_at: new Date(),
     updated_at: new Date()
   }, {
     first_name: 'Restu',
     last_name: 'Wahyu Utama',
+    role: 'USER',
+    email: 'restu@mail.me',
+    password: '$2y$10$L39zwF0Cd.4HqpGJClYsoeB.sE8xncMbxDOPMM8Y1hl/K4qIWnBDq',
     phone_number: '6282227777622',
     gender: 'PRIA',
     status: 'ACTIVE',
@@ -150,6 +207,9 @@ module.exports = {
     phone_number: '6282227777622',
     gender: 'PRIA',
     status: 'ACTIVE',
+    role: 'USER',
+    email: 'joseph@mail.me',
+    password: '$2y$10$L39zwF0Cd.4HqpGJClYsoeB.sE8xncMbxDOPMM8Y1hl/K4qIWnBDq',
     created_at: new Date(),
     updated_at: new Date()
   }, {
@@ -158,6 +218,9 @@ module.exports = {
     phone_number: '6282227777622',
     gender: 'PRIA',
     status: 'ACTIVE',
+    role: 'USER',
+    email: 'andry@mail.me',
+    password: '$2y$10$L39zwF0Cd.4HqpGJClYsoeB.sE8xncMbxDOPMM8Y1hl/K4qIWnBDq',
     created_at: new Date(),
     updated_at: new Date()
   }, { // 20
@@ -166,6 +229,9 @@ module.exports = {
     phone_number: '6282227777622',
     gender: 'WANITA',
     status: 'ACTIVE',
+    role: 'ADMIN',
+    email: 'bunga@mail.me',
+    password: '$2y$10$L39zwF0Cd.4HqpGJClYsoeB.sE8xncMbxDOPMM8Y1hl/K4qIWnBDq',
     created_at: new Date(),
     updated_at: new Date()
   }, {
@@ -174,6 +240,9 @@ module.exports = {
     phone_number: '6282227777622',
     gender: 'WANITA',
     status: 'ACTIVE',
+    role: 'USER',
+    email: 'lisa@mail.me',
+    password: '$2y$10$L39zwF0Cd.4HqpGJClYsoeB.sE8xncMbxDOPMM8Y1hl/K4qIWnBDq',
     created_at: new Date(),
     updated_at: new Date()
   }, {
@@ -182,6 +251,9 @@ module.exports = {
     phone_number: '6282227777622',
     gender: 'WANITA',
     status: 'ACTIVE',
+    role: 'USER',
+    email: 'maria@mail.me',
+    password: '$2y$10$L39zwF0Cd.4HqpGJClYsoeB.sE8xncMbxDOPMM8Y1hl/K4qIWnBDq',
     created_at: new Date(),
     updated_at: new Date()
   }, {
@@ -190,6 +262,9 @@ module.exports = {
     phone_number: '6282227777622',
     gender: 'PRIA',
     status: 'ACTIVE',
+    role: 'USER',
+    email: 'joseph.joseph@mail.me',
+    password: '$2y$10$L39zwF0Cd.4HqpGJClYsoeB.sE8xncMbxDOPMM8Y1hl/K4qIWnBDq',
     created_at: new Date(),
     updated_at: new Date()
   }, {
@@ -198,6 +273,9 @@ module.exports = {
     phone_number: '6282227777622',
     gender: 'PRIA',
     status: 'ACTIVE',
+    role: 'USER',
+    email: 'michael@mail.me',
+    password: '$2y$10$L39zwF0Cd.4HqpGJClYsoeB.sE8xncMbxDOPMM8Y1hl/K4qIWnBDq',
     created_at: new Date(),
     updated_at: new Date()
   }, {
@@ -206,6 +284,9 @@ module.exports = {
     phone_number: '6282227777622',
     gender: 'PRIA',
     status: 'ACTIVE',
+    role: 'USER',
+    email: 'frengky@mail.me',
+    password: '$2y$10$L39zwF0Cd.4HqpGJClYsoeB.sE8xncMbxDOPMM8Y1hl/K4qIWnBDq',
     created_at: new Date(),
     updated_at: new Date()
   }, {
@@ -214,6 +295,9 @@ module.exports = {
     phone_number: '6282227777622',
     gender: 'WANITA',
     status: 'ACTIVE',
+    role: 'USER',
+    email: 'netty@mail.me',
+    password: '$2y$10$L39zwF0Cd.4HqpGJClYsoeB.sE8xncMbxDOPMM8Y1hl/K4qIWnBDq',
     created_at: new Date(),
     updated_at: new Date()
   }, {
@@ -222,6 +306,9 @@ module.exports = {
     phone_number: '6282227777622',
     gender: 'PRIA',
     status: 'ACTIVE',
+    role: 'USER',
+    email: 'hizkia@mail.me',
+    password: '$2y$10$L39zwF0Cd.4HqpGJClYsoeB.sE8xncMbxDOPMM8Y1hl/K4qIWnBDq',
     created_at: new Date(),
     updated_at: new Date()
   }, {
@@ -230,6 +317,9 @@ module.exports = {
     phone_number: '6282227777622',
     gender: 'PRIA',
     status: 'ACTIVE',
+    role: 'USER',
+    email: 'dwi@mail.me',
+    password: '$2y$10$L39zwF0Cd.4HqpGJClYsoeB.sE8xncMbxDOPMM8Y1hl/K4qIWnBDq',
     created_at: new Date(),
     updated_at: new Date()
   }, {
@@ -238,6 +328,9 @@ module.exports = {
     phone_number: '6282227777622',
     gender: 'PRIA',
     status: 'ACTIVE',
+    role: 'USER',
+    email: 'danu@mail.me',
+    password: '$2y$10$L39zwF0Cd.4HqpGJClYsoeB.sE8xncMbxDOPMM8Y1hl/K4qIWnBDq',
     created_at: new Date(),
     updated_at: new Date()
   }, { // 30
@@ -246,6 +339,9 @@ module.exports = {
     phone_number: '6282227777622',
     gender: 'PRIA',
     status: 'ACTIVE',
+    role: 'USER',
+    email: 'kristian@mail.me',
+    password: '$2y$10$L39zwF0Cd.4HqpGJClYsoeB.sE8xncMbxDOPMM8Y1hl/K4qIWnBDq',
     created_at: new Date(),
     updated_at: new Date()
   }, {
@@ -254,8 +350,11 @@ module.exports = {
     phone_number: '6282227777622',
     gender: 'WANITA',
     status: 'ACTIVE',
+    role: 'USER',
+    email: 'ruth@mail.me',
+    password: '$2y$10$L39zwF0Cd.4HqpGJClYsoeB.sE8xncMbxDOPMM8Y1hl/K4qIWnBDq',
     created_at: new Date(),
     updated_at: new Date()
   }], {}),
-  down: (queryInterface, Sequelize) => queryInterface.bulkDelete('PropheticMember', null, {})
+  down: (queryInterface) => queryInterface.bulkDelete('PropheticMember', null, {})
 };
